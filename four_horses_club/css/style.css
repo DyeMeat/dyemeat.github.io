@@ -75,22 +75,22 @@ h3 {
 
 .beige-stone-bg {
     background-color: var(--beige);
-    background-image: url(./img/stone-bg.jpg);
+    background-image: url(../img/stone-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
 }
 
 .stone-bg {
-    background-image: url(./img/stone-bg.jpg);
+    background-image: url(../img/stone-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .paper-stone-bg {
     background:
-        url(./img/stone-bg-small.png) no-repeat center/cover,
-        url(./img/paper-bg.png) no-repeat center/cover;
+        url(../img/stone-bg-small.png) no-repeat center/cover,
+        url(../img/paper-bg.png) no-repeat center/cover;
     background-blend-mode: color-burn;
 }
 
@@ -258,7 +258,7 @@ h2 {
     display: block;
     width: 100%;
     height: 100%;
-    background: url(./img/stone-bg.jpg) no-repeat center/cover;
+    background: url(../img/stone-bg.jpg) no-repeat center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -397,8 +397,8 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, calc(-50% - 9px));
-    background: url(./img/stone-bg.jpg) no-repeat center/cover;
-    mask-image: url(./img/session-img.png);
+    background: url(../img/stone-bg.jpg) no-repeat center/cover;
+    mask-image: url(../img/session-img.png);
     mask-repeat: no-repeat;
     mask-size: cover;
     mask-position: center center;
@@ -524,7 +524,7 @@ h2 {
 }
 
 .stages__list .stages__item:nth-child(7)::after {
-    content: url(./img/plane-img.png);
+    content: url(../img/plane-img.png);
     position: absolute;
     top: -100px;
     right: -60px;
@@ -722,11 +722,11 @@ h2 {
 
 
 .slider__arrow.left_arrow {
-    background-image: url(./img/icon/slider-arrow-left.svg);
+    background-image: url(../img/icon/slider-arrow-left.svg);
 }
 
 .slider__arrow.right_arrow {
-    background-image: url(./img/icon/slider-arrow-right.svg);
+    background-image: url(../img/icon/slider-arrow-right.svg);
 }
 
 .slider__arrow:hover {
@@ -847,7 +847,7 @@ h2 {
     }
 
     .stages__list>.stages__item:first-child::after {
-        content: url(./img/plane-small.png);
+        content: url(../img/plane-small.png);
         position: absolute;
         top: 0;
         right: 0;
@@ -1101,7 +1101,7 @@ h2 {
     }
 
     .stages__list>.stages__item:first-child::after {
-        content: url(./img/plane-small.png);
+        content: url(../img/plane-small.png);
         position: absolute;
         top: 0;
         right: 50%;
