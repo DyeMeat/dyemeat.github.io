@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "YS Text";
+    src: url(../fonts/YS-Text-Regular.ttf) format("truetype");
+    font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: "YS Text";
+    src: url(../fonts/YS-Text-Medium.ttf) format("truetype");
+    font-weight: 500;
+	font-style: normal;
+}

@@ -1,0 +1,210 @@
+:root {
+    --btn-color: #FCE000;
+    --btn-color-hover: #fff188;
+    --text-color: #21201F;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fdde55;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    font-family: "YS Text";
+}
+
+.banner_section {
+    width: 300px;
+    height: 600px;
+    position: relative;
+    background: #fff url(../img/shelf.svg) no-repeat center 28px;
+    overflow: hidden;
+}
+
+.cart__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.cart__hitbox {
+    /* background-color: grey; */
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    bottom: 72px;
+    left: 55%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.products__item {
+    position: absolute;
+    -webkit-animation: none;
+    animation: none;
+    bottom: auto;
+    cursor: pointer;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+    z-index: 1;
+}
+
+.products__item.active {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    z-index: 2;
+}
+
+.products__img {
+    -webkit-transition: -webkit-filter .3s ease;
+    transition: -webkit-filter .3s ease;
+    -o-transition: filter .3s ease;
+    transition: filter .3s ease;
+    transition: filter .3s ease, -webkit-filter .3s ease;
+}
+
+.products__item.active .products__img {
+    -webkit-filter: drop-shadow(0 0 10px white);
+    filter: drop-shadow(0 0 10px white);
+}
+
+.products__item.in-cart {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.products__img,
+.cart__img,
+.products__item.in-cart {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+#wine {
+    top: 25px;
+    left: 66px;
+}
+
+#milk {
+    top: 59px;
+    left: 108px;
+}
+
+#jam {
+    top: 108px;
+    left: 147px;
+}
+
+#cheese {
+    top: 117px;
+    left: 202px;
+}
+
+#meat {
+    top: 195px;
+    left: 51px;
+}
+
+#chicken {
+    top: 197px;
+    left: 102px;
+}
+
+#chips {
+    top: 204px;
+    left: 173px;
+}
+
+#pineapple {
+    top: 265px;
+    left: 57px;
+}
+
+#bananas {
+    top: 293px;
+    left: 102px;
+}
+
+#apple {
+    top: 304px;
+    left: 159px;
+}
+
+#green {
+    top: 295px;
+    left: 200px;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.0625;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    padding: 19px 18px 20px;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    -webkit-transform-origin: 0 center;
+    -ms-transform-origin: 0 center;
+    transform-origin: 0 center;
+    background: var(--btn-color);
+    -webkit-box-shadow: inset 0 0 0 0 var(--btn-color-hover);
+    box-shadow: inset 0 0 0 0 var(--btn-color-hover);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn:hover {
+    color: var(--text-color);
+    text-decoration: none;
+    -webkit-box-shadow: inset 250px 0 0 0 var(--btn-color-hover);
+    box-shadow: inset 250px 0 0 0 var(--btn-color-hover);
+}
